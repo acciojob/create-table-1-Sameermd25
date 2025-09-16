@@ -12,6 +12,6 @@ function insert_Row() {
 
     tr.append(td1,td2);
 
-    table.insertBefore(tr,table.childNodes[1])
-  
+    //table.insertBefore(tr,table.childNodes[1])
+	  table.prepend(tr)
 }
