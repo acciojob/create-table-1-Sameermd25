@@ -1,6 +1,6 @@
 function insert_Row() {
     //Write your code here
-	const table=document.getElementById("sampleTable");
+	const table=document.getElementById("#sampleTable");
 	
 	const tr=document.createElement("tr");
 
