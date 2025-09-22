@@ -1,17 +1,17 @@
 function insert_Row() {
     //Write your code here
-	const table=document.getElementById("#sampleTable");
+	const tbody=document.getElementsByTagName("tbody");
 	
-	const tr=table.insertRow(0);
+	const tr=document.createElement("tr");
 
-    const td1=tr.insertCell(0);
+    const td1=document.createElement("td");
     td1.innerText="New Cell1";
 
-    const td2=tr.insertCell(1);
+    const td2=document.createElement("td");
     td2.innerText="New Cell2";
 
-    // tr.append(td1,td2);
+     tr.append(td1,td2);
 
     //table.insertBefore(tr,table.childNodes[1])
-	  //table.prepend(tr)
+	tbody[0].prepend(tr)
 }
